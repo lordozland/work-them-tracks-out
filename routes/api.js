@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const Transaction = require("../models/transaction.js");
+// const Transaction = require("../models/doobz.js");
 
-router.post("/api/transaction", ({ body }, res) => {
+router.post("/api/", ({ body }, res) => {
   Transaction.create(body)
     .then(dbTransaction => {
       res.json(dbTransaction);
