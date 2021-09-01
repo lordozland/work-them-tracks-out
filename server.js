@@ -9,7 +9,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-aspp.use(require("./routes/path"));
+app.use(require("./routes/path"));
 
 app.use(express.static("public"));
 
