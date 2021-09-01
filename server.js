@@ -1,12 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+
 const PORT = process.env.PORT || 3333;
 
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+aspp.use(require("./routes/path"));
 
 app.use(express.static("public"));
 
